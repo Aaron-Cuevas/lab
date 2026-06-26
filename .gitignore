@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.lab.cfg
+# LaTeX build leftovers
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
