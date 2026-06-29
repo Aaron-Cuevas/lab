@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{System for Reaching Prime Numbers Trough Lines}
+\author{Aaron Cuevas (Aaron-Cuevas)}
+\date{2026-06-28}
+
+\begin{document}
+\maketitle
+An insight looking trough prime numbers graphical arrangement
+\section
+Is possible to explain visually why some geometrical patterns appear in certain prime numer representations. Looking trough geometry it can be possible to explain the distribution of complex patterns. 
+The course of ideas will follow until drawing over the known polar-spiral structure, lines, being the result of projecting residual classes.
+\subsection
+The prime numbers are commonly represented with the equations of the polar-spiral graph, where every prime number with radio *p*
+and angle *p*:
+
+\begin{equation}
+    z_p = p e^{ip}
+\end{equation}
+And this behaviour come from a polar representation of integers, with a gap made between certain integers and the distribution of prime numbers in 
+residual clases coprimes of module (N)
+\subsection
+Every natural number can be colocated in the plane trough
+[
+z_n = n e^{in}
+]
+This equals as saying
+[
+x_n = n\cos(n)
+]
+[
+y_n = n\sin(n)
+]
+Where the number (n) determines simultaneously the distance to center and the rotation angle. 
+Filtering only the prime numbers, we obtain:
+[
+z_p = p e^{ip}
+]
+Where (p) passes by the prime numbers.
+
+\section{Partitions on the spiral}
+For concreting the multiple-partitions spiral structure, we choose a module (N), reaching that every natural number 
+can be calssified according to its residue.
+[
+n \equiv r \pmod N
+]
+And it's found that numbers of one residual calss have the form
+[
+n = r + kN
+]
+Putting then in an polar-spiral
+[
+z_{r+kN} = (r+kN)e^{i(r+kN)}
+]
+And separating the angular terms:
+[
+z_{r+kN} = e^{ir}(r+kN)e^{ikN}
+]
+Stabishing the relations with the nearby multiples, we have that if (N) is near a multiple of (2\pi), so:
+[
+N \approx 2\pi m
+]
+and by that:
+[
+e^{ikN} \approx 1
+]
+Implies that the numbers of one same residual class tends to be near the same angular direction.
+By this, we have built the lines that emerge from center.
+\subsection{Introduction of Dirichet Theorem}
+The tendency of the residual classes for obtaining infinite prime numbers don't apply to all of them.
+If a residue (r) shares a factor with (N), so a lot of numbers of the form
+[
+r+kN
+]
+Will be compound. For that are considered specially the classes where 
+[
+\gcd(r,N)=1
+]
+Being them the residual coprimal classes with (N). 
+According with Dirichlet's theorem, if (r) and (N) and coprimes, so exist infinite coprimes 
+in the aritmethic progression:
+[
+r, r+N, r+2N, r+3N,\dots
+]
+The lines corresponds to residual classes (r\pmod N), with
+[
+\gcd(r,N)=1
+]
+\subsection{Module 44}
+Remembering the example given by the initial explanation where is inspired this method, 
+we have that the number 44 is near of seven whole spins,
+[
+44 \approx 7(2\pi)
+]
+For that the residual classes of module (44) generates more numerous and defined lines.
+The residues that can contain infinite primes are those coprimes with (44)
+[
+\gcd(r,44)=1
+]
+as:
+[
+\varphi(44)=20
+]
+There are twenty permited classes that corresponds to 20 lines expected in the visualization. 
+\subsection{Error Tracking}
+As the alineation ain't perfect because (N) doesn't equal exactly a multiple of (2\pi). It can be writed
+[
+N = 2\pi m + \varepsilon
+]
+Where (\varepsilon) is the angular error. Every time we step ahead one unity in the same residual class, the error acumulates:
+[
+k\varepsilon
+]
+If (\varepsilon) is little, the line seems straight during very long time. If its larger, the line bends faster.
+So on, the straightnes of the lines depends on how good is the aproximation:
+[
+N \approx 2\pi m
+]
+
+/section{Proposed method}
+Formulating the analysis method, we find that, in first, we graph whe prime numbers through the function:
+[
+z_p = p e^{ip}
+]
+Then, we choose a modulo (N) near a multiple of (2\pi):
+[
+    N\approx 2\pi m
+]
+And we divide the numbers in residual classes:
+[
+p \equiv r \pmod N
+]
+We identify the coprimal classes:
+[
+\gcd(r,N)=1
+]
+And trace geometrical guides to that classes, compare the visual distribution of the primes with the permited resudual classes, and measure the accumulated angular deviation:
+[
+\varepsilon = N - 2\pi m
+]
+We analice what modules produce more persistent lines.
+% Domain: 🔬 Academic Systems
+% Write your insight below. Examples you can delete:
+%
+% Inline math: the wavelength is $\lambda = \SI{632.8}{nm}$.
+%
+% \begin{equation}
+%   E = \hbar\,\omega, \qquad \pdv{\psi}{t} = -\frac{i}{\hbar}\,\hat{H}\psi
+% \end{equation}
+
+\end{document}
